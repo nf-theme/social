@@ -1,0 +1,19 @@
+{
+    "name": "hieupv/nfsocial",
+    "authors": [
+        {
+            "name": "Hieupv",
+            "email": "hieupv.est@gmail.com"
+        }
+    ],
+    "autoload": {
+    	"psr-4": {
+    		"NFSocial\\": "src/"
+    	}
+
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.2",
+        "symfony/http-foundation": "^3.1"
+    }
+}
