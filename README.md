@@ -54,3 +54,9 @@ We have a shortcode to render login urls `[nf_social_url providers]`
 [nf_social_url providers="facebook,twitter"]
 ```
 use it anywhere that you want to display login button
+
+Or you can generate login url for each provider
+```php
+$login_url = \NightFury\Social\Facades\Social::driver($your_driver)->redirect()->getTargetUrl();
+
+```
