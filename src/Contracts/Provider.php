@@ -1,5 +1,5 @@
 <?php
-namespace NFSocial\Contracts;
+namespace NightFury\Social\Contracts;
 
 interface Provider
 {
@@ -12,7 +12,7 @@ interface Provider
     /**
      * Get the User instance for the authenticated user.
      *
-     * @return \NFSocial\Contracts\User
+     * @return \NightFury\Social\Contracts\User
      */
     public function user();
 }

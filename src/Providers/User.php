@@ -1,8 +1,8 @@
 <?php
 
-namespace NFSocial\Providers;
+namespace NightFury\Social\Providers;
 
-use NFSocial\AbstractUser;
+use NightFury\Social\AbstractUser;
 
 class User extends AbstractUser
 {

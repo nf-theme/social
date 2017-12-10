@@ -1,6 +1,6 @@
 <?php
 
-namespace NFSocial\Contracts;
+namespace NightFury\Social\Contracts;
 
 interface User
 {

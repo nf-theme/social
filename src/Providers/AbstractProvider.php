@@ -1,8 +1,8 @@
 <?php
 
-namespace NFSocial\Providers;
+namespace NightFury\Social\Providers;
 
-use NFSocial\Contracts\Provider as ProviderContract;
+use NightFury\Social\Contracts\Provider as ProviderContract;
 
 abstract class AbstractProvider implements ProviderContract
 {
@@ -103,7 +103,7 @@ abstract class AbstractProvider implements ProviderContract
      */
     abstract protected function getUserByToken($token);
     /**
-     * Map the raw user array to a NFSocial User instance.
+     * Map the raw user array to a NightFury\Social User instance.
      *
      * @param  array  $user
      * @return \Laravel\Socialite\Two\User
@@ -182,7 +182,7 @@ abstract class AbstractProvider implements ProviderContract
      * Get a Social User instance from a known access token.
      *
      * @param  string  $token
-     * @return \NFSocial\Providers\User
+     * @return \NightFury\Social\Providers\User
      */
     public function userFromToken($token)
     {

@@ -1,9 +1,9 @@
 <?php
 
-namespace NFSocial\Providers;
+namespace NightFury\Social\Providers;
 
-use NFSocial\Providers\AbstractProvider;
-use NFSocial\Providers\ProviderInterface;
+use NightFury\Social\Providers\AbstractProvider;
+use NightFury\Social\Providers\ProviderInterface;
 
 class FacebookProvider extends AbstractProvider implements ProviderInterface
 {

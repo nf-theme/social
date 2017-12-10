@@ -1,8 +1,8 @@
 <?php
 
-namespace NFSocial;
+namespace NightFury\Social;
 
-use NFSocial\Contracts\User;
+use NightFury\Social\Contracts\User;
 
 abstract class AbstractUser implements User
 {
