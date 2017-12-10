@@ -24,8 +24,6 @@ For example we have a page with url is `https://{your_domain}/oauth` then we use
 - `https://{your_domain}/oauth?provider=google` for Google app 
 
 ##### Step 4: Update your config file `config/app.php` with CLIENT_ID and SECRET_KEY
-> You can register any route by update `routes/api.php`
-
 ```php
 <?php
 
