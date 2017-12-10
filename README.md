@@ -31,14 +31,14 @@ return [
   // Other config 
   'services'   => [
         'facebook' => [
-            'client_id'     => '167002993705494',
-            'client_secret' => '7e22c6e5253831c1938cfb50ae23f767',
-            'redirect'      => 'http://wp-origin.dev/oauth?provider=facebook',
+            'client_id'     => 'your_facebook_app_client_id',
+            'client_secret' => 'your_facebook_app_secret_key',
+            'redirect'      => 'https://{your_domain}/oauth?provider=facebook',
         ],
         'twitter'  => [
-            'client_id'     => 'BYk9oKJKxLMqfYYbRAJXwPKrt',
-            'client_secret' => 'lkcqQzaR0V7FCFUyJE55uTxvUQlZfnzBEIE3sIxKHTXNf1bNQw',
-            'redirect'      => 'http://wp-origin.dev/oauth?provider=twitter',
+            'client_id'     => 'your_twitter_app_client_id',
+            'client_secret' => 'your_twitter_app_secret_key',
+            'redirect'      => 'https://{your_domain}/oauth?provider=twitter',
         ],
         'google'   => [
             'client_id'     => '',
