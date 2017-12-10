@@ -33,12 +33,12 @@ return [
         'facebook' => [
             'client_id'     => 'your_facebook_app_client_id',
             'client_secret' => 'your_facebook_app_secret_key',
-            'redirect'      => 'https://{your_domain}/oauth?provider=facebook',
+            'redirect'      => 'https://{your_domain}/oauth?provider=facebook', // use callback url from step 3
         ],
         'twitter'  => [
             'client_id'     => 'your_twitter_app_client_id',
             'client_secret' => 'your_twitter_app_secret_key',
-            'redirect'      => 'https://{your_domain}/oauth?provider=twitter',
+            'redirect'      => 'https://{your_domain}/oauth?provider=twitter', // use callback url from step 3
         ],
         'google'   => [
             'client_id'     => '',
