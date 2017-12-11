@@ -57,6 +57,7 @@ use it anywhere that you want to display login button
 
 Or you can generate login url for each provider
 ```php
-$login_url = \NightFury\Social\Facades\Social::driver($your_driver)->redirect()->getTargetUrl();
-
+$facebook_login_url = \NightFury\Social\Facades\Social::driver('facebook')->stateless()->redirect()->getTargetUrl();
+$google_login_url = \NightFury\Social\Facades\Social::driver('google')->stateless()->redirect()->getTargetUrl();
+$twitter_login_url = \NightFury\Social\Facades\Social::driver('twitter')->redirect()->getTargetUrl();
 ```
