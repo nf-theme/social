@@ -24,6 +24,13 @@ class Manager extends \Illuminate\Support\Manager implements Contracts\Factory
     const TWITTER_PROVIDER               = 'twitter';
     const GOOGLE_PROVIDER                = 'google';
 
+    public function loginWithAccessToken($provider, $token)
+    {
+        $driver = $this->driver($provider);
+        $user   = $driver->userFromToken($token);
+        return $this->login($user, $provider);
+    }
+
     public function loginWithAuthToken($provider, $code, $verify_code = null)
     {
         $driver = $this->driver($provider);
@@ -33,7 +40,7 @@ class Manager extends \Illuminate\Support\Manager implements Contracts\Factory
             $request->offsetSet('oauth_verifier', $verify_code);
             $driver->setRequest($request);
             $user = $driver->user();
-            // var_dump($user);die();
+            var_dump($user);die();
         } else {
             $response = $driver->getAccessTokenResponse($code);
             $token    = Arr::get($response, 'access_token');
