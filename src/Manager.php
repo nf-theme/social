@@ -33,16 +33,16 @@ class Manager extends \Illuminate\Support\Manager implements Contracts\Factory
             $request->offsetSet('oauth_verifier', $verify_code);
             $driver->setRequest($request);
             $user = $driver->user();
-            var_dump($user);die();
+            // var_dump($user);die();
         } else {
             $response = $driver->getAccessTokenResponse($code);
             $token    = Arr::get($response, 'access_token');
             $user     = $driver->userFromToken($token);
         }
-        return $this->login($user);
+        return $this->login($user, $provider);
     }
 
-    public function login(\Laravel\Socialite\AbstractUser $user)
+    public function login(\Laravel\Socialite\AbstractUser $user, $provider = '')
     {
         $users = get_users(['meta_key' => Manager::NF_SOCIAL_ID_META_KEY, 'meta_value' => $user->getId()]);
 
