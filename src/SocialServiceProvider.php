@@ -48,6 +48,8 @@ class SocialServiceProvider extends ServiceProvider
             $url = get_user_meta($id, Manager::NF_SOCIAL_IMAGE_META_KEY, true);
             if ($url != '') {
                 $avatar = "<img alt='{$alt}' src='{$url}' class='avatar avatar-{$size} photo' height='{$size}' width='{$size}' />";
+            } else {
+                return avatar;
             }
         }
         return $avatar;
