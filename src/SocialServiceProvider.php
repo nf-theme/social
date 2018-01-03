@@ -49,7 +49,7 @@ class SocialServiceProvider extends ServiceProvider
             if ($url != '') {
                 $avatar = "<img alt='{$alt}' src='{$url}' class='avatar avatar-{$size} photo' height='{$size}' width='{$size}' />";
             } else {
-                return avatar;
+                return $avatar;
             }
         }
         return $avatar;
