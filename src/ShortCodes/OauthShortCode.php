@@ -27,6 +27,9 @@ class OauthShortCode extends ShortCode
             case Manager::TWITTER_PROVIDER:
                 $user = Social::driver(Manager::TWITTER_PROVIDER)->user();
                 break;
+            case Manager::GOOGLE_PROVIDER:
+                $user = Social::driver(Manager::GOOGLE_PROVIDER)->stateless()->user();
+                break;
             default:
                 throw new Exception("Provider not found", 1);
                 break;
